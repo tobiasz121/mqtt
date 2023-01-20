@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #90EE90; /* sets the background color to soft green */
+    display: flex;
+    justify-content: flex-start; /* centers elements horizontally */
+    align-items: center; /* aligns elements to the top vertically */
+    min-height: 100vh;
+    flex-wrap: wrap; /* to make elements wrap to next line */
+    flex-direction: column; /* to stack elements vertically */
+  }
+  
+  header, main {
+    display: block; /* makes the elements block level, so they will stack on top of each other */
+    width: 100%; /* 100% width for the elements to take the full width of the container*/   
+    text-align: center; 
+    
+  }
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+ul {
+  display: flex;
+  flex-direction: column; /* to stack elements vertically */
+  align-items: center; /* centers elements horizontally */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    color: white; /* sets the text color to white */
+    text-decoration: none; /* removes the underline */
+}
+
+li:hover {
+    font-size: larger; /* increase the font size */
+  }
+  
+  li {    
+    background-color: blue; /* sets the background color to blue */
+    color: white; /* sets the text color to white */
+    padding: 10px 20px; /* adds some padding to the button */
+    border-radius: 10px; /* sets the border radius to 10px */
+    text-align: center; /* centers the text within the button */    
+    cursor: pointer; /* changes the cursor to pointer when hovering over the button */
+    width: fit-content; /* makes the button width equal to the size of its content */
+    min-width: 250px; /* sets a minimum width for the button */
+    margin-bottom: 10px; /* adds margin to the bottom of the button */
+  }
